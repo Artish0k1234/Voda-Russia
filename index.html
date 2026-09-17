@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Старо-Мытищинский Источник | Доставка питьевой воды 19 л</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- FIXED SIDE WATER CASCADES -->
+    <canvas id="side-water-canvas"></canvas>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <img src="logo.jpg" alt="Старо-Мытищинский Источник" />
+                <div>
+                    <div class="brand-name">СТАРО-МЫТИЩИНСКИЙ</div>
+                    <div class="brand-sub">ИСТОЧНИК • voda-russia.ru</div>
+                </div>
+            </a>
+
+            <!-- Меню в точном порядке отображения -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#promo">Комплекты</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#new-clients">Новым клиентам</a></li>
+                <li><a href="#specs">Состав воды</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="#contacts" class="wave-btn header-cta-desktop">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span class="wave-text">Заказать воду</span>
+                </a>
+                <button class="mobile-menu-btn" id="burgerBtn" aria-label="Открыть меню">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <canvas id="hero-water-canvas"></canvas>
+        <div class="hero-content">
+            <div>
+                <div class="badge-hero">
+                    <i class="fa-solid fa-droplet"></i>
+                    Экологически чистый район Подмосковья
+                </div>
+                <h1>Доставка артезианской воды для дома и офиса</h1>
+                <p>Природная чистота, бережная многоступенчатая фильтрация и идеальный баланс микроэлементов без накипи
+                    при кипячении.</p>
+
+                <div class="hero-cta-group">
+                    <a href="#new-clients" class="wave-btn">
+                        <span class="wave-text">Попробовать бесплатно</span>
+                    </a>
+                    <a href="#contacts" class="wave-btn secondary">
+                        <span class="wave-text">Связаться с менеджером</span>
+                    </a>
+                </div>
+
+                <div class="hero-badges-row">
+                    <div class="mini-feature"><i class="fa-solid fa-truck-fast"></i> Бесплатная доставка</div>
+                    <div class="mini-feature"><i class="fa-solid fa-shield-halved"></i> Без залога за тару</div>
+                    <div class="mini-feature"><i class="fa-solid fa-gift"></i> Подарки новичкам</div>
+                </div>
+            </div>
+
+            <div class="bottle-stage">
+                <div class="water-orb"></div>
+                <img src="logo.jpg" alt="Бутыль 19л Старо-Мытищинский Источник" class="hero-bottle" />
+                <div class="bottle-reflection"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. КОМПЛЕКТЫ -->
+    <div class="promo-strip" id="promo">
+        <div class="promo-card">
+            <div class="promo-text">
+                <h3>🎁 Выгодный комплект всего за 1 000 ₽</h3>
+                <p>3 бутыли воды 19 л + электрическая помпа в подарок! Идеальное решение для первого заказа.</p>
+            </div>
+            <a href="#contacts" class="wave-btn light">
+                <span class="wave-text">Забрать комплект</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 2. ЦЕНЫ -->
+    <section id="prices" class="section-padded">
+        <div class="section-title-wrap">
+            <span>Каталог продукции</span>
+            <h2>Цены на воду в бутылях 19 литров</h2>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card featured">
+                <h4>Источник</h4>
+                <div class="price-value">450 ₽</div>
+                <div class="price-sub">за 1 бутыль 19 л</div>
+            </div>
+            <div class="price-card">
+                <h4>Премиум</h4>
+                <div class="price-value">480 ₽</div>
+                <div class="price-sub">за 1 бутыль 19 л</div>
+            </div>
+            <div class="price-card">
+                <h4>Горная Вершина</h4>
+                <div class="price-value">600 ₽</div>
+                <div class="price-sub">за 1 бутыль 19 л</div>
+            </div>
+            <div class="price-card">
+                <h4>Эльбусинка Детская</h4>
+                <div class="price-value">620 ₽</div>
+                <div class="price-sub">за 1 бутыль 19 л</div>
+            </div>
+            <div class="price-card">
+                <h4>Легенда гор Архыз</h4>
+                <div class="price-value">670 ₽</div>
+                <div class="price-sub">за 1 бутыль 19 л</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. НОВЫМ КЛИЕНТАМ -->
+    <section class="tier-section" id="new-clients">
+        <div class="tier-container">
+            <div class="section-title-wrap">
+                <span>Специальные предложения</span>
+                <h2>Прайс для новых клиентов</h2>
+                <p class="section-desc">Чем больше заказ — тем выгоднее стоимость каждой бутыли</p>
+            </div>
+
+            <div class="tier-table-grid">
+                <div class="tier-free">
+                    <div>
+                        <div class="tier-free-title">1 бутыль 19 литров на пробу</div>
+                        <div class="tier-free-sub">Оцените качество родниковой свежести бесплатно</div>
+                    </div>
+                    <div class="free-badge">БЕСПЛАТНО</div>
+                </div>
+
+                <div class="tier-item"><span class="volume">2 бутыли</span><span class="price">500 ₽</span></div>
+                <div class="tier-item"><span class="volume">3 бутыли</span><span class="price">485 ₽</span></div>
+                <div class="tier-item"><span class="volume">6 бутылей</span><span class="price">440 ₽</span></div>
+                <div class="tier-item"><span class="volume">10 бутылей</span><span class="price">400 ₽</span></div>
+                <div class="tier-item"><span class="volume">20 бутылей</span><span class="price">380 ₽</span></div>
+                <div class="tier-item"><span class="volume">30 бутылей</span><span class="price">360 ₽</span></div>
+                <div class="tier-item"><span class="volume">50 бутылей</span><span class="price">340 ₽</span></div>
+                <div class="tier-item"><span class="volume">75 бутылей</span><span class="price">310 ₽</span></div>
+                <div class="tier-item wholesale">
+                    <span class="volume">100 бутылей и более / оптовые поставки</span>
+                    <span class="price wholesale-text">Обсуждается индивидуально</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="benefits-grid">
+        <div class="benefit-box">
+            <div class="benefit-icon"><i class="fa-solid fa-box-open"></i></div>
+            <h3>Тара без залога</h3>
+            <p>Тара является возвратной. Вам не нужно оплачивать залог за емкости.</p>
+        </div>
+        <div class="benefit-box">
+            <div class="benefit-icon"><i class="fa-solid fa-truck"></i></div>
+            <h3>Бесплатная доставка</h3>
+            <p>Быстрая и аккуратная доставка прямо до кулера в квартире или кабинете.</p>
+        </div>
+        <div class="benefit-box">
+            <div class="benefit-icon"><i class="fa-solid fa-gift"></i></div>
+            <h3>Подарки новичкам</h3>
+            <p>При первом заказе 1 бутыль и помпа в подарок, а также скидка на объемы.</p>
+        </div>
+        <div class="benefit-box">
+            <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>ГОСТ и качество</h3>
+            <p>Соответствие санитарно-эпидемиологическим стандартам РФ.</p>
+        </div>
+    </section>
+
+    <!-- СОСТАВ ВОДЫ -->
+    <section class="specs-section" id="specs">
+        <div class="specs-card">
+            <div class="specs-text">
+                <span class="specs-tag">Лабораторный состав</span>
+                <h3>Характеристики воды</h3>
+                <p>Добыта из экологически чистого источника в Подмосковье. Проходит бережную многоступенчатую
+                    фильтрацию, сохраняя природный вкус.</p>
+                <p>Идеально подходит для горячих и холодных напитков. Не образует накипи на нагревательных элементах
+                    чайников и кулеров.</p>
+
+                <div class="specs-key-list">
+                    <div>💧 <strong>Минерализация:</strong> 0,05 – 0,5 г/дм³</div>
+                    <div>💧 <strong>Жесткость:</strong> 0 – 2,5 ºЖ</div>
+                    <div>💧 <strong>Безопасная тара:</strong> пищевой поликарбонат 19 л</div>
+                </div>
+            </div>
+
+            <div class="mineral-grid">
+                <div class="mineral-item">
+                    <div class="name">Кальций (Ca)</div>
+                    <div class="val">0,1 – 30 мг/дм³</div>
+                </div>
+                <div class="mineral-item">
+                    <div class="name">Магний (Mg)</div>
+                    <div class="val">0,1 – 20 мг/дм³</div>
+                </div>
+                <div class="mineral-item">
+                    <div class="name">Натрий (Na)</div>
+                    <div class="val">1 – 150 мг/дм³</div>
+                </div>
+                <div class="mineral-item">
+                    <div class="name">Калий (K)</div>
+                    <div class="val">0,1 – 10 мг/дм³</div>
+                </div>
+                <div class="mineral-item">
+                    <div class="name">Гидрокарбонаты</div>
+                    <div class="val">30 – 420 мг/дм³</div>
+                </div>
+                <div class="mineral-item">
+                    <div class="name">Сульфаты</div>
+                    <div class="val">1 – 40 мг/дм³</div>
+                </div>
+                <div class="mineral-item full-width">
+                    <div class="name">Хлориды</div>
+                    <div class="val">0,1 – 10 мг/дм³</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОСЛЕДНИЙ РАЗДЕЛ С ЖИВЫМИ ВОЛНАМИ И МАТРИЦЕЙ ВОЛН -->
+    <section class="managers-section" id="contacts">
+        <!-- Canvas с интерактивной 3D-волной в нижнем блоке -->
+        <canvas id="bottom-wave-canvas"></canvas>
+
+        <div class="managers-content-wrap">
+            <div class="section-title-wrap">
+                <span style="color: #38bdf8;">Служба заботы</span>
+                <h2 style="color: #ffffff;">Ваши личные менеджеры</h2>
+                <p class="section-desc" style="color: #bae6fd;">Поток воды наполняет чашу — оформите доставку прямо
+                    сейчас</p>
+            </div>
+
+            <div class="managers-grid">
+                <div class="manager-card">
+                    <div class="manager-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>Алексей</h4>
+                    <div class="manager-role">Персональный менеджер</div>
+                    <a href="tel:+79260328287" class="contact-line"><i class="fa-solid fa-phone"></i> +7 (926)
+                        032-82-87</a>
+                    <a href="mailto:stmwater01@mail.ru" class="contact-line"><i class="fa-regular fa-envelope"></i>
+                        stmwater01@mail.ru</a>
+                    <div class="social-btn-group">
+                        <a href="https://t.me/+79260328287" target="_blank" class="social-tag"><i
+                                class="fa-brands fa-telegram"></i> Telegram</a>
+                        <span class="social-tag">Max</span>
+                    </div>
+                </div>
+
+                <div class="manager-card">
+                    <div class="manager-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>Марат</h4>
+                    <div class="manager-role">Персональный менеджер</div>
+                    <a href="tel:+79998407594" class="contact-line"><i class="fa-solid fa-phone"></i> +7 (999)
+                        840-75-94</a>
+                    <a href="mailto:stmwater02@mail.ru" class="contact-line"><i class="fa-regular fa-envelope"></i>
+                        stmwater02@mail.ru</a>
+                    <div class="social-btn-group">
+                        <a href="https://t.me/+79998407594" target="_blank" class="social-tag"><i
+                                class="fa-brands fa-telegram"></i> Telegram</a>
+                        <span class="social-tag">Max</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 «Старо-Мытищинский Источник». Качественная доставка питьевой воды.</p>
+        <p class="footer-sub">Сайт: <a href="http://www.voda-russia.ru">www.voda-russia.ru</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
