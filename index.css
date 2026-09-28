@@ -22,7 +22,6 @@ body {
     position: relative;
 }
 
-/* SUBTLE AMBIENT SIDE WATER (GENTLE BACKGROUND GLOW, NOT RAIN) */
 #side-water-canvas {
     position: fixed;
     top: 0;
@@ -31,8 +30,7 @@ body {
     height: 100vh;
     pointer-events: none;
     z-index: 40;
-    opacity: 0.35;
-    /* Keeps it soft and in the background */
+    opacity: 0.25;
 }
 
 /* HEADER */
@@ -238,7 +236,7 @@ header {
 
 .hero h1 {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+    font-size: clamp(2rem, 4vw, 2.9rem);
     font-weight: 800;
     line-height: 1.15;
     color: #082f49;
@@ -513,6 +511,13 @@ header {
     align-items: center;
     border-left: 4px solid var(--primary);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tier-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
 }
 
 .tier-item .volume {
@@ -548,6 +553,11 @@ header {
     align-items: center;
     gap: 15px;
     box-shadow: 0 10px 25px rgba(2, 132, 199, 0.25);
+    transition: transform 0.2s;
+}
+
+.tier-free:hover {
+    transform: translateY(-3px);
 }
 
 .tier-free-title {
@@ -695,7 +705,7 @@ header {
     margin-top: 4px;
 }
 
-/* LAST SECTION: 3D PARTICLE WAVE BASIN */
+/* MANAGERS SECTION */
 .managers-section {
     position: relative;
     background: #020c1b;
@@ -761,6 +771,7 @@ header {
     font-size: 0.85rem;
     color: #64748b;
     margin-bottom: 22px;
+    line-height: 1.4;
 }
 
 .contact-line {
@@ -768,11 +779,10 @@ header {
     align-items: center;
     gap: 10px;
     margin-bottom: 14px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #1e293b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0284c7;
     text-decoration: none;
-    word-break: break-all;
 }
 
 .contact-line i {
@@ -780,13 +790,13 @@ header {
 }
 
 .contact-line:hover {
-    color: var(--primary);
+    color: var(--primary-hover);
 }
 
 .social-btn-group {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .social-tag {
