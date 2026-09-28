@@ -73,7 +73,7 @@ function renderHero() {
     requestAnimationFrame(renderHero);
 }
 
-// 4. SUBTLE AMBIENT SIDE BACKGROUND FLOW (Disabled on Mobile to keep UI clean)
+// 4. SUBTLE AMBIENT SIDE BACKGROUND FLOW
 const sideCanvas = document.getElementById('side-water-canvas');
 const sideCtx = sideCanvas.getContext('2d');
 let sideW, sideH;
@@ -83,7 +83,6 @@ function resizeSideCanvas() {
     sideH = sideCanvas.height = window.innerHeight;
 }
 
-// Very soft, ambient glowing particles on the far left and right edges
 const ambientParticles = Array.from({ length: 24 }, () => ({
     x: Math.random() > 0.5 ? Math.random() * 60 : window.innerWidth - (Math.random() * 60),
     y: Math.random() * window.innerHeight,
@@ -95,7 +94,6 @@ const ambientParticles = Array.from({ length: 24 }, () => ({
 function renderSideAmbient() {
     sideCtx.clearRect(0, 0, sideW, sideH);
 
-    // Only render ambient side particles on desktop/tablet screens
     if (window.innerWidth > 768) {
         ambientParticles.forEach(p => {
             p.y -= p.speed;
@@ -165,14 +163,12 @@ function renderBottomWave() {
     requestAnimationFrame(renderBottomWave);
 }
 
-// RESIZE DISPATCHER
 window.addEventListener('resize', () => {
     resizeHero();
     resizeSideCanvas();
     resizeBottomCanvas();
 });
 
-// START ALL ENGINES
 resizeHero();
 resizeSideCanvas();
 resizeBottomCanvas();
