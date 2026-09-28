@@ -82,6 +82,7 @@ header {
     font-size: 1.3rem;
     background: linear-gradient(135deg, #0284c7, #075985);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.15;
 }
